@@ -14,18 +14,30 @@ import Combine
 class ViewController: UIViewController {
     let urlStr = URL(string: "https://www.appcoda.com.tw/")
     
+    @IBOutlet weak var myBtn: UIButton!
+    @IBOutlet weak var myImgView: UIImageView!
+    @IBOutlet weak var anotherImgVie: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        navigationController?.navigationBar.backgroundColor = .blue
-        title = "測試標題"
+//        myBtn.configuration?.title = "請按我"
+//        anotherImgVie.image = UIImage(systemName: "scribble")
+   
+//        print(myBtn.state)
+        print(view.frame)
+        print(navigationController?.viewControllers)
+//        view.backgroundColor = .red
+//        navigationController?.navigationBar.backgroundColor = .blue
+//        title = "測試標題"
+        
         let task = URLSession.shared.dataTask(with: urlStr!) { data, resp, error in
             
         }
         task.resume()
         
-        // 訂閱關係 - 建造關係
-        let subsription =
+//        // 訂閱關係 - 建造關係
+//        let subsription =
         // 發布者 - 建造者
         URLSession.shared.dataTaskPublisher(for: urlStr!)
         // 操作者 - 建造資訊
@@ -37,7 +49,7 @@ class ViewController: UIViewController {
                 
             }
         
-        subsription
+//        subsription
         
         // 建造者模式( builder pattern )
         var components = URLComponents()
