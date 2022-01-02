@@ -13,6 +13,10 @@
 		91F46A6F276CD0DB00FC9AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F46A6D276CD0DB00FC9AA9 /* Main.storyboard */; };
 		91F46A71276CD0DF00FC9AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F46A70276CD0DF00FC9AA9 /* Assets.xcassets */; };
 		91F46A74276CD0DF00FC9AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F46A72276CD0DF00FC9AA9 /* LaunchScreen.storyboard */; };
+		91F46A7C276E0DD400FC9AA9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F46A7B276E0DD400FC9AA9 /* SecondViewController.swift */; };
+		91F46A7E276E0F0100FC9AA9 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F46A7D276E0F0100FC9AA9 /* SecondTableViewCell.swift */; };
+		91F46A80276E117900FC9AA9 /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F46A7F276E117900FC9AA9 /* ThirdTableViewCell.swift */; };
+		91F46A83277067BC00FC9AA9 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 91F46A82277067BC00FC9AA9 /* test.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		91F46A70276CD0DF00FC9AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91F46A73276CD0DF00FC9AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91F46A75276CD0DF00FC9AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F46A7B276E0DD400FC9AA9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		91F46A7D276E0F0100FC9AA9 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		91F46A7F276E117900FC9AA9 /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
+		91F46A82277067BC00FC9AA9 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,25 @@
 			children = (
 				91F46A67276CD0DB00FC9AA9 /* AppDelegate.swift */,
 				91F46A69276CD0DB00FC9AA9 /* SceneDelegate.swift */,
-				91F46A6B276CD0DB00FC9AA9 /* ViewController.swift */,
+				91F46A82277067BC00FC9AA9 /* test.xml */,
+				91F46A812770664600FC9AA9 /* Controller */,
 				91F46A6D276CD0DB00FC9AA9 /* Main.storyboard */,
 				91F46A70276CD0DF00FC9AA9 /* Assets.xcassets */,
 				91F46A72276CD0DF00FC9AA9 /* LaunchScreen.storyboard */,
 				91F46A75276CD0DF00FC9AA9 /* Info.plist */,
 			);
 			path = FRPPractice;
+			sourceTree = "<group>";
+		};
+		91F46A812770664600FC9AA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91F46A6B276CD0DB00FC9AA9 /* ViewController.swift */,
+				91F46A7B276E0DD400FC9AA9 /* SecondViewController.swift */,
+				91F46A7D276E0F0100FC9AA9 /* SecondTableViewCell.swift */,
+				91F46A7F276E117900FC9AA9 /* ThirdTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +148,7 @@
 				91F46A74276CD0DF00FC9AA9 /* LaunchScreen.storyboard in Resources */,
 				91F46A71276CD0DF00FC9AA9 /* Assets.xcassets in Resources */,
 				91F46A6F276CD0DB00FC9AA9 /* Main.storyboard in Resources */,
+				91F46A83277067BC00FC9AA9 /* test.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F46A7C276E0DD400FC9AA9 /* SecondViewController.swift in Sources */,
+				91F46A7E276E0F0100FC9AA9 /* SecondTableViewCell.swift in Sources */,
 				91F46A6C276CD0DB00FC9AA9 /* ViewController.swift in Sources */,
 				91F46A68276CD0DB00FC9AA9 /* AppDelegate.swift in Sources */,
 				91F46A6A276CD0DB00FC9AA9 /* SceneDelegate.swift in Sources */,
+				91F46A80276E117900FC9AA9 /* ThirdTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
